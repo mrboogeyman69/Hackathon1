@@ -1,0 +1,353 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Change background color to black */
+    color: #fff; /* Set text color to white */
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between; /* Distribute items with space between them */
+    align-items: center; /* Vertically center items */
+    padding: 0;
+    list-style-type: none;
+}
+#about {
+    padding: 50px;
+    color: #555555;
+    /*background-color: #f2f2f2; !* Change background color as desired *!*/
+    text-align: center;
+}
+
+/* Style the heading */
+#about h2 {
+    font-size: 2.5em; /* Change font size as desired */
+    margin-bottom: 20px;
+}
+#book-table {
+    order: 2; /* Change the order to move Book a Table button to the end */
+}
+
+#book-table a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+#dropdown-items {
+    display: none;
+}
+/* Center and style Menu heading */
+#menu {
+    /*background-color: #f7f7f7; !* Change the background color as desired *!*/
+    padding: 50px 0;
+}
+
+#menu h2 {
+    /*background-color: #f7f7f7;*/
+    text-align: center;
+    font-size: 2.5em;
+}
+#events h2 {
+    /*background-color: #f7f7f7;*/
+    text-align: center;
+    font-size: 2.5em;
+}
+#events h1 {
+    /*background-color: #f7f7f7;*/
+    text-align: center;
+    font-size: 3.5em;
+}
+#chefs h2 {
+    /*background-color: #f7f7f7;*/
+    text-align: center;
+    font-size: 2.5em;
+}
+#menu h3 {
+    /*background-color: #e35151;*/
+    text-align: center;
+    font-size: 1.5em; /* Adjust the font size as needed */
+    margin-bottom: 20px;
+}
+/* Style menu buttons */
+.menu-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-btn {
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 1em;
+    border: none;
+    background-color: #3498db; /* Change button color as desired */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-btn:hover {
+    background-color: #2980b9; /* Change hover color as desired */
+}
+
+/* Style menu items */
+.menu-items {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.menu-item {
+    margin: 10px;
+    position: relative;
+}
+
+.menu-item img {
+    max-width: 50%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.menu-item img:hover {
+    transform: translateY(-10px); /* Change the amount of floating effect */
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+/* Example CSS for Testimonials */
+
+#testimonials {
+    text-align: center;
+    padding: 50px;
+}
+
+.testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-text {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.testimonial-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Make the image circular */
+}
+
+/* Slideshow styles */
+.mySlides {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/* Add animation for slideshow */
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Dots style */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+#book-a-table h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    /*color: #333; !* Adjust the color as needed *!*/
+}
+#book-a-table {
+    /*background-color: #f2f2f2;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-table-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.book-table-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start; /* To align items at the top */
+    width: 100%;
+}
+
+.book-table-image {
+    flex: 1;
+    padding-right: 10px;
+}
+
+.book-table-image img {
+    width: 100%;
+    height: auto;
+}
+
+.book-table-form {
+    flex: 2;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-right: 80px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #ff4444;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #cc0000;
+}
+
+/* Contact section styles */
+#contact h2 {
+    /*background-color: #f7f7f7;*/
+    text-align: center;
+    font-size: 2.5em;
+}
+.contact-section {
+    /*background-color: #f9f9f9; !* Change background color *!*/
+    padding: 50px;
+}
+
+/* Contact details layout */
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    justify-content: center;
+}
+
+/* Adjustments for different screen sizes */
+@media (max-width: 768px) {
+    .contact-details {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info {
+        width: 100%;
+        max-width: 80%;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: #333;
+    color: white;
+}
+
+.footer-item {
+    width: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* Add styles for other sections as needed */

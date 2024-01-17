@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum</title>
+    <link rel="stylesheet" href="sty.css">
+    <script src="jsc.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Lorem Ipsum</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#chefs">Chefs</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li>
+                <a href="#" id="dropdown-button">Dropdown &#9662;</a>
+                <ul id="dropdown-items">
+                    <li><a href="#item1">Item 1</a></li>
+                    <li><a href="#item2">Item 2</a></li>
+                    <li><a href="#item3">Item 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+            <li id="book-table"><a href="#book-a-table">Book a Table</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" style="padding: 50px;">
+    <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 30px;">Welcome to Our Restaurant</h2>
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+        <div style="flex: 1; padding-right: 20px;">
+            <p style="font-size: 1.2rem; color: #555; line-height: 1.6;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et eleifend libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin convallis risus nec arcu efficitur, sit amet blandit lorem posuere.
+            </p>
+            <p style="font-size: 1.2rem; color: #555; line-height: 1.6;">
+                Curabitur volutpat sem non ex blandit, ut dictum lacus ultricies. Vivamus sed augue sed libero lacinia molestie. Maecenas tristique mauris ut ligula placerat aliquam.
+            </p>
+            <p style="font-size: 1.2rem; color: #555; line-height: 1.6;">
+                Integer nec justo nec lacus convallis volutpat. Sed gravida felis id enim tempus, in lobortis lectus rhoncus. Sed nec dui sapien. Nullam euismod ultrices eros ac venenatis.
+            </p>
+            <div style="margin-top: 20px;">
+                <button style="padding: 15px 30px; font-size: 1.2rem; background-color: #ff7f50; color: #fff; border: none; border-radius: 5px; cursor: pointer;"><a href="#book-a-table">Book a Table</a></button>
+                <button style="padding: 15px 30px; font-size: 1.2rem; background-color: #4682b4; color: #fff; border: none; border-radius: 5px; cursor: pointer; margin-left: 20px;"><a href="https://www.youtube.com/watch?v=MHG3n_-Y33A">Watch Video</a></button>
+            </div>
+        </div>
+        <div style="flex: 1; text-align: right;">
+            <img src="stats-bg.jpg" alt="Image" style="max-width: 100%; border-radius: 10px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);">
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2 style="color: #bbbbbb">About Us</h2>
+    <div style="display: flex;">
+        <!-- Left side with image -->
+        <div style="flex: 1; padding-right: 20px;">
+            <img src="about.jpg" alt="Image" style="width: 100%;">
+        </div>
+        <!-- Right side divided into text and image -->
+        <div style="flex: 1; display: flex; flex-direction: column;">
+            <div style="flex: 1; padding-right: 10px;">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et eleifend libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin convallis risus nec arcu efficitur, sit amet blandit lorem posuere.
+                </p>
+                <p>
+                    Curabitur volutpat sem non ex blandit, ut dictum lacus ultricies. Vivamus sed augue sed libero lacinia molestie. Maecenas tristique mauris ut ligula placerat aliquam.
+                </p>
+            </div>
+            <div style="flex: 1;">
+                <img src="about-2.jpg" alt="Image" style="width: 100%; height: 70%;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="menu">
+    <h2 style="text-align: center; font-size: 2.5em;">Our Menu</h2>
+
+    <div id="menuNavigation" class="menu-buttons">
+        <button onclick="showMenu('starters')" class="menu-btn">Starters</button>
+        <button onclick="showMenu('breakfast')" class="menu-btn">Breakfast</button>
+        <button onclick="showMenu('lunch')" class="menu-btn">Lunch</button>
+        <button onclick="showMenu('dinner')" class="menu-btn">Dinner</button>
+    </div>
+    <div class="menu-items" style="display: flex; justify-content: center;">
+    <section id="starters">
+        <h3 >Starters</h3>
+        <div style="display: flex; flex-wrap: wrap;">
+            <!-- Images for starters -->
+            <!-- First row -->
+            <div style="flex: 0 0 25.33%; padding: 50px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <img src="menu-item-1.png" alt="Starter 1" style="max-width: 100%;">
+                <p style="text-align: center;">Dish 1 - $10</p>
+            </div>
+            <div style="flex: 0 0 25.33%; padding: 50px;">
+                <img src="menu-item-2.png" alt="Starter 2" style="max-width: 100%;">
+                <p style="text-align: center;">Dish 2 - $12</p>
+            </div>
+            <div style="flex: 0 0 25.33%; padding: 50px;">
+                <img src="menu-item-3.png" alt="Starter 3" style="max-width: 100%;">
+                <p style="text-align: center;">Dish 3 - $15</p>
+            </div>
+            <!-- Second row -->
+            <div style="flex: 0 0 25.33%; padding: 50px;">
+                <img src="menu-item-4.png" alt="Starter 4" style="max-width: 100%;">
+                <p style="text-align: center;">Dish 4 - $14</p>
+            </div>
+            <div style="flex: 0 0 25.33%; padding: 50px;">
+                <img src="menu-item-5.png" alt="Starter 5" style="max-width: 100%;">
+                <p style="text-align: center;">Dish 5 - $16</p>
+            </div>
+            <div style="flex: 0 0 25.33%; padding: 50px;">
+                <img src="menu-item-6.png" alt="Starter 6" style="max-width: 100%;">
+                <p style="text-align: center;">Dish 6 - $18</p>
+            </div>
+        </div>
+    </section>
+    <section id="breakfast" style="display: none;">
+        <h3>Breakfast</h3>
+        <div style="display: flex; flex-wrap: wrap;">
+            <!-- Images for starters -->
+            <!-- First row -->
+            <div style="flex: 0 0 25.33%; padding: 50px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <img src="menu-item-1.png" alt="Starter 1" style="max-width: 100%;">
+                <p style="text-align: center;">Dish 1 - $10</p>
+            </div>
+            <div style="flex: 0 0 25.33%; padding: 50px;">
+                <img src="menu-item-2.png" alt="Starter 2" style="max-width: 100%;">
+                <p style="text-align: center;">Dish 2 - $12</p>
+            </div>
+            <div style="flex: 0 0 25.33%; padding: 50px;">
+                <img src="menu-item-3.png" alt="Starter 3" style="max-width: 100%;">
+                <p style="text-align: center;">Dish 3 - $15</p>
+            </div>
+            <!-- Second row -->
+            <div style="flex: 0 0 25.33%; padding: 50px;">
+                <img src="menu-item-4.png" alt="Starter 4" style="max-width: 100%;">
+                <p style="text-align: center;">Dish 4 - $14</p>
+            </div>
+            <div style="flex: 0 0 25.33%; padding: 50px;">
+                <img src="menu-item-5.png" alt="Starter 5" style="max-width: 100%;">
+                <p style="text-align: center;">Dish 5 - $16</p>
+            </div>
+            <div style="flex: 0 0 25.33%; padding: 50px;">
+                <img src="menu-item-6.png" alt="Starter 6" style="max-width: 100%;">
+                <p style="text-align: center;">Dish 6 - $18</p>
+            </div>
+        </div>
+    </section>
+    <section id="lunch" style="display: none;">
+        <h3>Lunch</h3>
+        <div style="display: flex; flex-wrap: wrap;">
+            <!-- Images for starters -->
+            <!-- First row -->
+            <div style="flex: 0 0 25.33%; padding: 50px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <img src="menu-item-1.png" alt="Starter 1" style="max-width: 100%;">
+                <p style="text-align: center;">Dish 1 - $10</p>
+            </div>
+            <div style="flex: 0 0 25.33%; padding: 50px;">
+                <img src="menu-item-2.png" alt="Starter 2" style="max-width: 100%;">
+                <p style="text-align: center;">Dish 2 - $12</p>
+            </div>
+            <div style="flex: 0 0 25.33%; padding: 50px;">
+                <img src="menu-item-3.png" alt="Starter 3" style="max-width: 100%;">
+                <p style="text-align: center;">Dish 3 - $15</p>
+            </div>
+            <!-- Second row -->
+            <div style="flex: 0 0 25.33%; padding: 50px;">
+                <img src="menu-item-4.png" alt="Starter 4" style="max-width: 100%;">
+                <p style="text-align: center;">Dish 4 - $14</p>
+            </div>
+            <div style="flex: 0 0 25.33%; padding: 50px;">
+                <img src="menu-item-5.png" alt="Starter 5" style="max-width: 100%;">
+                <p style="text-align: center;">Dish 5 - $16</p>
+            </div>
+            <div style="flex: 0 0 25.33%; padding: 50px;">
+                <img src="menu-item-6.png" alt="Starter 6" style="max-width: 100%;">
+                <p style="text-align: center;">Dish 6 - $18</p>
+            </div>
+        </div>
+    </section>
+    <section id="dinner" style="display: none;">
+        <h3>Dinner</h3>
+        <div style="display: flex; flex-wrap: wrap;">
+            <!-- Images for starters -->
+            <!-- First row -->
+            <div style="flex: 0 0 25.33%; padding: 50px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <img src="menu-item-1.png" alt="Starter 1" style="max-width: 100%;">
+                <p style="text-align: center;">Dish 1 - $10</p>
+            </div>
+            <div style="flex: 0 0 25.33%; padding: 50px;">
+                <img src="menu-item-2.png" alt="Starter 2" style="max-width: 100%;">
+                <p style="text-align: center;">Dish 2 - $12</p>
+            </div>
+            <div style="flex: 0 0 25.33%; padding: 50px;">
+                <img src="menu-item-3.png" alt="Starter 3" style="max-width: 100%;">
+                <p style="text-align: center;">Dish 3 - $15</p>
+            </div>
+            <!-- Second row -->
+            <div style="flex: 0 0 25.33%; padding: 50px;">
+                <img src="menu-item-4.png" alt="Starter 4" style="max-width: 100%;">
+                <p style="text-align: center;">Dish 4 - $14</p>
+            </div>
+            <div style="flex: 0 0 25.33%; padding: 50px;">
+                <img src="menu-item-5.png" alt="Starter 5" style="max-width: 100%;">
+                <p style="text-align: center;">Dish 5 - $16</p>
+            </div>
+            <div style="flex: 0 0 25.33%; padding: 50px;">
+                <img src="menu-item-6.png" alt="Starter 6" style="max-width: 100%;">
+                <p style="text-align: center;">Dish 6 - $18</p>
+            </div>
+        </div>
+    </section>
+    </div>
+
+</section>
+
+<section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="slideshow-container">
+        <!-- Testimonial 1 -->
+        <div class="mySlides fade">
+            <div class="testimonial">
+                <div class="testimonial-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et eleifend libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin convallis risus nec arcu efficitur.</p>
+                </div>
+                <div class="testimonial-img">
+                    <img src="testimonials-1.jpg" alt="Person 1">
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="mySlides fade">
+            <div class="testimonial">
+                <div class="testimonial-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et eleifend libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin convallis risus nec arcu efficitur.</p>
+                </div>
+                <div class="testimonial-img">
+                    <img src="testimonials-2.jpg" alt="Person 1">
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="mySlides fade">
+            <div class="testimonial">
+                <div class="testimonial-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et eleifend libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin convallis risus nec arcu efficitur.</p>
+                </div>
+                <div class="testimonial-img">
+                    <img src="testimonials-3.jpg" alt="Person 1">
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="mySlides fade">
+            <div class="testimonial">
+                <div class="testimonial-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et eleifend libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin convallis risus nec arcu efficitur.</p>
+                </div>
+                <div class="testimonial-img">
+                    <img src="testimonials-4.jpg" alt="Person 1">
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation dots -->
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+</section>
+
+<section id="events">
+    <h2>Events</h2>
+    <h1>Share Your Moments In Our Restaurant</h1>
+    <div style="display: flex;">
+        <!-- First event -->
+        <div style="flex: 1; padding: 10px;">
+            <img src="events-1.jpg" alt="Event 1" style="max-width: 100%;">
+            <p>Event 1 Description Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <!-- Second event -->
+        <div style="flex: 1; padding: 10px;">
+            <img src="events-2.jpg" alt="Event 2" style="max-width: 100%;">
+            <p>Event 2 Description Sed et eleifend libero. Vestibulum ante ipsum primis.</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="chefs">
+    <h2>Our Chefs</h2>
+    <div style="display: flex;">
+        <!-- First chef -->
+        <div style="flex: 1; text-align: center; padding: 10px;">
+            <img src="chefs-1.jpg" alt="Chef 1" style="max-width: 100%;">
+            <h3>Chef 1</h3>
+            <p>Description of Chef 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <!-- Second chef -->
+        <div style="flex: 1; text-align: center; padding: 10px;">
+            <img src="chefs-2.jpg" alt="Chef 2" style="max-width: 100%;">
+            <h3>Chef 2</h3>
+            <p>Description of Chef 2 Sed et eleifend libero. Vestibulum ante ipsum primis.</p>
+        </div>
+        <!-- Third chef -->
+        <div style="flex: 1; text-align: center; padding: 10px;">
+            <img src="chefs-3.jpg" alt="Chef 3" style="max-width: 100%;">
+            <h3>Chef 3</h3>
+            <p>Description of Chef 3 Nulla facilisi. Proin ullamcorper bibendum tellus.</p>
+        </div>
+    </div>
+</section>
+
+<section id="book-a-table">
+    <div class="book-table-heading">
+        <h2>Book a Table</h2>
+    </div>
+    <div class="book-table-content">
+        <div class="book-table-image">
+            <!-- Replace 'table-image.jpg' with your image -->
+            <img src="reservation.jpg" alt="Book a Table Image">
+        </div>
+        <div class="book-table-form">
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="people">Number of People:</label>
+                        <input type="number" id="people" name="people" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="18" maxlength="10000" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Book a Table</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="gallery-1.jpg" style="width:100%" alt="GALLERY-1">
+        </div>
+        <div class="mySlides fade">
+            <img src="gallery-2.jpg" style="width:100%" alt="GALLERY-2">
+        </div>
+        <div class="mySlides fade">
+            <img src="gallery-3.jpg" style="width:100%" alt="GALLERY-3">
+        </div>
+        <div class="mySlides fade">
+            <img src="gallery-4.jpg" style="width:100%" alt="GALLERY-4">
+        </div>
+        <div class="mySlides fade">
+            <img src="gallery-5.jpg" style="width:100%" alt="GALLERY-5">
+        </div>
+        <div class="mySlides fade">
+            <img src="gallery-6.jpg" style="width:100%" alt="GALLERY-6">
+        </div>
+        <div class="mySlides fade">
+            <img src="gallery-7.jpg" style="width:100%" alt="GALLERY-7">
+        </div>
+        <div class="mySlides fade">
+            <img src="gallery-8.jpg" style="width:100%" alt="GALLERY-8">
+        </div>
+
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</section>
+
+
+<section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+
+    <!-- Map -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.1234567890124!2d-77.0365!3d38.8977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7bcdecbb1df%3A0x715969d86f183a91!2sThe%20White%20House!5e0!3m2!1sen!2sus!4v1638278700000!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <!-- Contact Details -->
+    <div class="contact-details">
+        <div class="contact-info">
+            <div class="oval-box">
+                <h3>Our Address</h3>
+                <p>123 Street, City, Country</p>
+            </div>
+        </div>
+        <div class="contact-info">
+            <div class="oval-box">
+                <h3>Email Us</h3>
+                <p>info@example.com</p>
+            </div>
+        </div>
+        <div class="contact-info">
+            <div class="oval-box">
+                <h3>Call Us</h3>
+                <p>+1 234 5678 910</p>
+            </div>
+        </div>
+        <div class="contact-info">
+            <div class="oval-box">
+                <h3>Opening Hours</h3>
+                <p>Monday-Friday: 9am-6pm<br>Saturday-Sunday: Closed</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+</body>
+<footer>
+    <div class="footer-item">
+        <h3>Address</h3>
+        <p>123 Street, City, Country</p>
+    </div>
+
+    <div class="footer-item">
+        <h3>Reservations</h3>
+        <p>Email: info@example.com<br>Phone: +1 234 5678 910</p>
+    </div>
+
+    <div class="footer-item">
+        <h3>Opening Hours</h3>
+        <p>Monday-Friday: 9am-6pm<br>Saturday-Sunday: Closed</p>
+    </div>
+
+    <div class="footer-item">
+        <h3>Follow Us</h3>
+        <p>
+            <a href="https://www.instagram.com/">Instagram</a><br>
+            <a href="https://twitter.com/">Twitter</a><br>
+            <a href="https://www.facebook.com/">Facebook</a><br>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+        </p>
+    </div>
+</footer>
+
+
+</html>
